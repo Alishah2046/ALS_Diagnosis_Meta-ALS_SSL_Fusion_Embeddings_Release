@@ -1,0 +1,14 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# If you are publishing large arrays via Release assets (recommended),
+# keep them out of git:
+embeddings/**/*.npy
+

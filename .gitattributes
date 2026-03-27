@@ -1,0 +1,6 @@
+# If you choose Git LFS for large arrays, enable and track:
+#   git lfs install
+#   git lfs track "embeddings/**/*.npy"
+#
+# This file is a hint; actual tracking depends on your hosting/quota.
+

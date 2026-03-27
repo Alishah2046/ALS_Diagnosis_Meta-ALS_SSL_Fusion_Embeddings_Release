@@ -1,0 +1,10 @@
+{
+  "split_seed": 42,
+  "split_level": "subject",
+  "train_fraction_subjects": 0.8,
+  "test_fraction_subjects": 0.2,
+  "stratify": "subject majority label",
+  "n_subjects_total": 63,
+  "n_subjects_train": 50,
+  "n_subjects_test": 13
+}

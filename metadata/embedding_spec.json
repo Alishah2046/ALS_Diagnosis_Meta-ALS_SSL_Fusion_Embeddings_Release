@@ -1,0 +1,132 @@
+{
+  "pooling": "masked mean pooling",
+  "fusion_schemes": {
+    "acoustic": {
+      "wav2vec2_large": [
+        0,
+        1,
+        2
+      ],
+      "hubert_xlarge": [
+        0,
+        1,
+        2
+      ],
+      "data2vec_audio_large": [
+        0,
+        1,
+        2
+      ],
+      "wavlm_large": [
+        0,
+        1,
+        2
+      ]
+    },
+    "stability": {
+      "wav2vec2_large": [
+        5,
+        6,
+        7
+      ],
+      "hubert_xlarge": [
+        9,
+        10,
+        11
+      ],
+      "data2vec_audio_large": [
+        9,
+        10,
+        11
+      ],
+      "wavlm_large": [
+        5,
+        6,
+        7
+      ]
+    },
+    "middle": {
+      "wav2vec2_large": [
+        10,
+        11,
+        12
+      ],
+      "hubert_xlarge": [
+        22,
+        23,
+        24
+      ],
+      "data2vec_audio_large": [
+        11,
+        12,
+        13
+      ],
+      "wavlm_large": [
+        10,
+        11,
+        12
+      ]
+    },
+    "last3": {
+      "wav2vec2_large": [
+        22,
+        23,
+        24
+      ],
+      "hubert_xlarge": [
+        45,
+        46,
+        47
+      ],
+      "data2vec_audio_large": [
+        22,
+        23,
+        24
+      ],
+      "wavlm_large": [
+        22,
+        23,
+        24
+      ]
+    },
+    "multi_depth": {
+      "wav2vec2_large": [
+        0,
+        5,
+        12,
+        24
+      ],
+      "hubert_xlarge": [
+        0,
+        5,
+        12,
+        47
+      ],
+      "data2vec_audio_large": [
+        0,
+        9,
+        13,
+        24
+      ],
+      "wavlm_large": [
+        0,
+        5,
+        12,
+        24
+      ]
+    }
+  },
+  "file_layout": {
+    "per_backbone": [
+      "embeddings/<backbone>/X_acoustic.npy",
+      "embeddings/<backbone>/X_stability.npy",
+      "embeddings/<backbone>/X_middle.npy",
+      "embeddings/<backbone>/X_last3.npy",
+      "embeddings/<backbone>/X_multi_depth.npy",
+      "metadata/<backbone>/labels.npy",
+      "metadata/<backbone>/subject_ids.npy",
+      "metadata/<backbone>/gender.npy",
+      "metadata/<backbone>/utterance_ids.npy"
+    ]
+  }
+}
