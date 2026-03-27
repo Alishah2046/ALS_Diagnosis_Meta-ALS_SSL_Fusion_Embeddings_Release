@@ -43,7 +43,7 @@ Subject-disjoint split lists:
 This repo **does not include raw audio** and **does not include original filenames**.
 Only anonymized subject IDs and synthetic utterance IDs are provided.
 
-Before making anything public, confirm your IRB/data-use terms allow release of **derived embeddings** and labels.
+
 
 ## GitHub file-size note
 The `.npy` matrices in `embeddings/` are **>100 MB** each, so normal git pushes to GitHub will fail unless you:
